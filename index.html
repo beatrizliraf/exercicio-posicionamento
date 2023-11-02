@@ -8,49 +8,58 @@
 </head>
 
 <body>
-  <img src="img/Grace&Clean.svg" alt="Grace&Clean">
+  <header class="header">
+    <img src="img/Grace&Clean.svg" alt="Grace&Clean">
 
-  <div class="menu">
-    <a href="/">Sobre</a>
-    <a href="/">Produtos</a>
-    <a href="/">Lojas</a>
-    <a href="/">Contato</a>
-  </div>
+   <nav aria-label="primaria">
+      <ul class="menu">
+        <li><a href="/">Sobre</a></li>
+        <li><a href="/">Produtos</a></li>
+        <li><a href="/">Lojas</a></li>
+        <li><a href="/">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <div class="conteudo">
-    <div class="introducao">
-      <span class="detalhe"></span>
-      <h1>Nossa Maquiagem do Futuro</h1>
+<main>
+  <article class="conteudo">
+    <div class="introducao" aria-labelledby="label-introducao">
+      <h1 id="label-introducao">Revele a sua melhor versão</h1>
       <p>Junta-se a nós nesta jornada em direção a uma beleza mais consciente, onde a ética e a sustentabilidade não são apenas tendências, mas o futuro da beleza. Experimente nossa linha de maquiagem cruelty-free, vegana, com embalagens ecológicas e linhas inclusivas, e descubra uma nova maneira de bilhar sem limites.</p>
       <a class="botao" href="/">Ver Mais</a>
     </div>
-
+    <div class="introducao-cover">
     <img src="./img/Introducao.jpg" alt="Aplicação de cremes em mãos maduras"> 
+    </div>
+  </article>
 
-    <h2 class="subtitulo">Vantagens Grace&Clean</h2>
+  <article class="conteudo conteudo-vantagens" aria-labelledby="label-vantagens">
+    <h2 class="subtitulo" id="label-vantagens">Vantagens Grace&Clean</h2>
 
-    <div class="vantagens">
-      <div class="vantagens-item">
-        <img src="./img/inclusao.svg" alt="">
+    <ul class="vantagens">
+      <li class="vantagens-item">
+        <img src= "./img/coelho.svg"alt="">
+        <h3>Cruelty-Fre</h3>
+        <p>Produtos cruelty-free tendem a conter menos ingredientes prejudiciais, como produtos químicos agressivos que podem irritar a pele.</p>
+      </li>
+      <li class="vantagens-item">
+        <img src= "./img/inclusao.svg" alt="">
         <h3>Inclusão</h3>
         <p>A maquiagem é muitas vezes uma ferramenta para expressão e autoexpressão. Uma marca inclusiva pode promover a autoestima, permitindo que mais pessoas se sintam confiantes e confortáveis consigo mesmas.</p>
-      </div>
-      <div class="vantagens-item">
-        <img src="./img/coelho.svg" alt="">
-        <h3>Cruelty-Fre</h3>
-        <p>Produtos cruelty-free tendem a conter menos ingredientes prejudiciais, como produtos químicos agressivos ou alérgenos, que podem irritar a pele.</p>
-      </div>
-      <div class="vantagens-item">
+      </li>
+      <li class="vantagens-item">
         <img src="./img/reciclagem.svg" alt="">
         <h3>Embalagens Ecológicas</h3>
-        <p>A busca por embalagens ecológicas frequentemente leva a inovações em design, resultando em embalagens mais eficientes, compactas e criativas.</p>
-      </div>
-    </div>
-  </div>
+        <p>A busca por embalagens ecológicas frequentemente leva a embalagens mais eficientes, compactas e criativas.</p>
+      </li>
+    </ul>
+  </ul>
+</article>
+</main>
 
-  <div class="rodape">
+  <footer class="rodape">
     <p>Grace&Clean. Alguns Direitos Reservados.</p>
-  </div>
+  </footer>
 
 </body>
 </html>
